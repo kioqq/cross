@@ -336,6 +336,7 @@ impl Os {
                 ("solaris", _) => Os::Solaris,
                 // android targets also set linux, so must occur first
                 ("android", _) => Os::Android,
+                ("nightly", _) => Os::Android,
                 (_, "linux") => Os::Linux,
                 (_, "windows") => Os::Windows,
                 (abi, system) => {
